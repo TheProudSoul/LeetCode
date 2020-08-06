@@ -6,8 +6,23 @@
 
 ## 前置准备
 
-1. 在 GitHub 上创建新的 repository，不要 ☑️ `Initialize this repository with a README`。
-2. 在本地准备同步的文件夹下右键 `Git Bash Here`，或者打开 `CMD` 然后 `cd` 到此目录
+1. 先绑定 SSH Key，见横线下面 👇
+2. 在 GitHub 上创建新的 repository，不要 ☑️ `Initialize this repository with a README`。
+3. 在本地准备同步的文件夹下右键 `Git Bash Here`，或者打开 `CMD` 然后 `cd` 到此目录
+
+------
+
+生成 SSH
+
+```shell script
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+将用户目录下的 `./id_rsa.pub` 中的内容复制过来
+
+![](https://github.com/TheProudSoul/LeetCode/blob/master/images/ssh.png)
+
+![](https://github.com/TheProudSoul/LeetCode/blob/master/images/ssh1.png)
 
 ## 本地仓库相关操作
 
