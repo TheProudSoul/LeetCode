@@ -9,6 +9,7 @@
 1. 先绑定 SSH Key，见横线下面 👇
 2. 在 GitHub 上创建新的 repository，不要 ☑️ `Initialize this repository with a README`。
 3. 在本地准备同步的文件夹下右键 `Git Bash Here`，或者打开 `CMD` 然后 `cd` 到此目录
+4. 为了方便理解，我们将本地仓库理解为地面 🏠，将远程仓库理解为云端的 🏠。
 
 ------
 
@@ -24,17 +25,25 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 ![](https://github.com/TheProudSoul/LeetCode/blob/master/images/ssh1.png)
 
+------
+
+概念理解
+
+工作区、版本库
+
 ## 本地仓库相关操作
 
 ### 初始化一个新的仓库
+
+> 这个命令初始化一个空的仓库，相当于建立一个新的地面 🏠。
 
 ```shell script
 git init
 ```
 
-这个命令初始化一个空的仓库，相当于现实中买下一个空的仓库。
+### 在本地记录远程仓库
 
-### 与远程仓库建立联系
+> 即为地面 🏠 记录确认好云端 🏠 的地址。
 
 ```shell script
 git remote add origin git@github.com:address.git
@@ -42,7 +51,43 @@ git remote add origin git@github.com:address.git
 
 这个命令理解为 **git** 应用，为现在的本地仓库添加（**add**）一个远程仓库（**git@github.com:address.git**）的对应关系（**remote**），将此远程库命名为 **origin**。
 
+### 往仓库中添加文件
+
+> 改造地面 🏠，为其添砖加瓦，在里面添置 🪑
+
+```shell script
+git add <文件名>
+```
+
+往仓库中放入 <文件名> 文件。
+
+```shell script
+git add .
+```
+
+`.` 意味当前目录，这个命令将当前文件夹下的所有文件都放入仓库中，使用频率相对较高。
+
+### 添加版本信息
+
+> 将当前变化添加记录到蓝图中
+
+```shell script
+git commit -m "first commit"
+```
+
+`commit` 提交一个版本，后接此版本的信息，比如，add 什么 feature，fix 什么 bug。
+
+### 查看仓库状态
+
+```shell script
+git status
+```
+
 ### 为当前分支与远程上游建立追踪关系
+
+> push 理解为将手中所有蓝图送到云端的 🏠，让云端造着蓝图打造一份
+>
+> pull 刚好跟 push 相反
 
 #### 在远程创建一个与本地同名分支并跟踪（就无脑用此方法）
 
@@ -64,34 +109,6 @@ git checkout --track <远程主机名>/<远程分支名>
 
 ```shell script
 git branch --set-upstream-to=<远程主机名>/<远程分支名> <本地分支名>
-```
-
-### 往仓库中添加文件
-
-```shell script
-git add <文件名>
-```
-
-往仓库中放入 <文件名> 文件。
-
-```shell script
-git add .
-```
-
-`.` 意味当前目录，这个命令将当前文件夹下的所有文件都放入仓库中，使用频率相对较高。
-
-### 添加版本信息
-
-```shell script
-git commit -m "first commit"
-```
-
-`commit` 提交一个版本，后接此版本的信息，比如，add 什么 feature，fix 什么 bug。
-
-### 查看仓库状态
-
-```shell script
-git status
 ```
 
 ### 分支
