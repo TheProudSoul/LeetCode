@@ -142,3 +142,13 @@ git checkout <分支名>
 ```shell script
 git checkout -b <分支名>
 ```
+
+------
+
+## 配置
+
+清除某个文件夹的 git 缓存
+
+```shell script
+git rm -r --cached <文件夹名>
+```
