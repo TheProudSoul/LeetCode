@@ -1,6 +1,6 @@
 # Week 2: August 8st - August 14th
 
-## Path Sum III
+## Path Sum III (August 8th)
 
 You are given a binary tree in which each node contains an integer value.
 
@@ -30,7 +30,7 @@ Return 3. The paths that sum to 8 are:
 3. -3 -> 11
 ```
 
-## Rotting Oranges
+## Rotting Oranges (August 9th)
 
 In a given grid, each cell can have one of three values:
 
@@ -72,3 +72,92 @@ Explanation:  Since there are already no fresh oranges at minute 0, the answer i
 1. `1 <= grid.length <= 10`
 2. `1 <= grid[0].length <= 10`
 3. `grid[i][j]` is only `0`, `1`, or `2`.
+
+## Excel Sheet Column Number (August 10th)
+
+Given a column title as appear in an Excel sheet, return its corresponding column number.
+
+For example:
+
+```
+A -> 1
+B -> 2
+C -> 3
+...
+Z -> 26
+AA -> 27
+AB -> 28 
+...
+```
+    
+**Example 1:**
+
+```
+Input: "A"
+Output: 1
+```
+
+**Example 2:**
+
+```
+Input: "AB"
+Output: 28
+```
+
+**Example 3:**
+
+```
+Input: "ZY"
+Output: 701
+```
+
+**Constraints:**
+
+- `1 <= s.length <= 7`
+- `s` consists only of uppercase English letters.
+- `s` is between "A" and "FXSHRXW".
+
+## H-Index (August 11th)
+
+Given an array of citations (each citation is a non-negative integer) of a researcher, write a function to compute the researcher's h-index.
+
+According to the [definition of h-index on Wikipedia](https://en.wikipedia.org/wiki/H-index): "A scientist has index h if h of his/her N papers have **at least** h citations each, and the other N − h papers have **no more than** h citations each."
+
+**Example:**
+
+```
+Input: citations = [3,0,6,1,5]
+Output: 3 
+Explanation: [3,0,6,1,5] means the researcher has 5 papers in total and each of them had 
+             received 3, 0, 6, 1, 5 citations respectively. 
+             Since the researcher has 3 papers with at least 3 citations each and the remaining 
+             two with no more than 3 citations each, her h-index is 3.
+```
+
+**Note:** If there are several possible values for h, the maximum one is taken as the h-index.
+
+**Hint #1:** An easy approach is to sort the array first.
+
+**Hint #2:** What are the possible values of h-index?
+
+**Hint #3:** A faster approach is to use extra space.
+
+## Pascal's Triangle II (August 12th)
+
+Given a non-negative index k where k ≤ 33, return the kth index row of the Pascal's triangle.
+
+Note that the row index starts from 0.
+
+![](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
+
+**Example:**
+
+```
+Input: 3
+Output: [1,3,3,1]
+```
+
+**Follow up:**
+
+Could you optimize your algorithm to use only O(k) extra space?
+
