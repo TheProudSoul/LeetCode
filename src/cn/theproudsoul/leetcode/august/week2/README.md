@@ -1,4 +1,4 @@
-# Week 2: August 8st - August 14th
+# Week 2: August 8th  - August 14th
 
 ## Path Sum III (August 8th)
 
@@ -161,3 +161,57 @@ Output: [1,3,3,1]
 
 Could you optimize your algorithm to use only O(k) extra space?
 
+## Iterator for Combination (August 13th)
+
+Design an Iterator class, which has:
+
+- A constructor that takes a string `characters` of **sorted distinct** lowercase English letters and a number `combinationLength` as arguments.
+- A function next() that returns the next combination of length `combinationLength` in lexicographical order.
+- A function hasNext() that returns `True` if and only if there exists a next combination.
+ 
+
+**Example:**
+
+```
+CombinationIterator iterator = new CombinationIterator("abc", 2); // creates the iterator.
+
+iterator.next(); // returns "ab"
+iterator.hasNext(); // returns true
+iterator.next(); // returns "ac"
+iterator.hasNext(); // returns true
+iterator.next(); // returns "bc"
+iterator.hasNext(); // returns false
+```
+
+**Constraints:**
+
+- `1 <= combinationLength <= characters.length <= 15`
+- There will be at most `10^4` function calls per test.
+- It's guaranteed that all calls of the function `next` are valid.
+
+**Hint #1:** Generate all combinations as a preprocessing.
+
+**Hint #2:** Use bit masking to generate all the combinations.
+
+## Longest Palindrome (August 14th)
+
+Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
+
+This is case sensitive, for example `"Aa"` is not considered a palindrome here.
+
+**Note:**
+
+Assume the length of given string will not exceed 1,010.
+
+**Example:**
+
+```
+Input:
+"abccccdd"
+
+Output:
+7
+
+Explanation:
+One longest palindrome that can be built is "dccaccd", whose length is 7.
+```
