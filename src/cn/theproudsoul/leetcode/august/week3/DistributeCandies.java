@@ -1,5 +1,7 @@
 package cn.theproudsoul.leetcode.august.week3;
 
+import java.util.Arrays;
+
 public class DistributeCandies {
   public int[] distributeCandies(int candies, int num_people) {
     int turn;
@@ -23,9 +25,7 @@ public class DistributeCandies {
 
   public static void main(String[] args) {
     DistributeCandies obj = new DistributeCandies();
-//    int[] arr = {5,2,3};
-//    assert obj.distributeCandies(10, 3).equals(new int[]{5, 2, 3});
-    assert obj.distributeCandies(7, 4).equals(new int[]{1, 2, 3, 1});
-
+    assert Arrays.equals(obj.distributeCandies(10, 3), new int[]{5, 2, 3});
+    assert Arrays.equals(obj.distributeCandies(7, 4), new int[]{1, 2, 3, 1});
   }
 }
