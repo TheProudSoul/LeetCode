@@ -140,3 +140,46 @@ Output: [10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]
 
 1. `1 <= N <= 9`
 2. `0 <= K <= 9`
+
+## Goat Latin (August 19th)
+
+垃圾题目
+
+## Reorder List (August 20th)
+
+Given a singly linked list L: L0→L1→…→Ln-1→Ln,
+
+reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
+
+You may not modify the values in the list's nodes, only nodes itself may be changed.
+
+**Example 1:**
+
+```
+Given 1->2->3->4, reorder it to 1->4->2->3.
+```
+
+**Example 2:**
+
+```
+Given 1->2->3->4->5, reorder it to 1->5->2->4->3.
+```
+
+## Sort Array By Parity (August 21st)
+
+Given an array `A` of non-negative integers, return an array consisting of all the even elements of `A`, followed by all the odd elements of `A`.
+
+You may return any answer array that satisfies this condition.
+
+**Example 1:**
+
+```
+Input: [3,1,2,4]
+Output: [2,4,3,1]
+The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
+```
+
+**Note:**
+
+- `1 <= A.length <= 5000`
+- `0 <= A[i] <= 5000`
