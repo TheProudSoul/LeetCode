@@ -12,7 +12,7 @@ public class DistributeCandies {
     for (int i = 0; i < num_people; i++) {
       // 等差数列 1,4,7,..., Sn = n(a1+an)/2
       int nextNeededCandies = turn * num_people + i + 1;
-      if (candies >= nextNeededCandies){
+      if (candies >= nextNeededCandies) {
         result[i] = (turn + 1) * (i + nextNeededCandies + 1) / 2;
         candies -= nextNeededCandies;
       } else {

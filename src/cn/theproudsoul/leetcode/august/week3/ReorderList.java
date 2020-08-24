@@ -1,6 +1,7 @@
 package cn.theproudsoul.leetcode.august.week3;
 
 import java.util.Stack;
+
 class ListNode {
   int val;
   ListNode next;
@@ -32,12 +33,11 @@ public class ReorderList {
       pointer = pointer.next;
       stack.push(pointer);
     }
-    pointer = head;
 
     while (stack.peek() != head) {
       ListNode tmp = head.next;
       head.next = stack.pop();
-      if (head.next==tmp) {
+      if (head.next == tmp) {
         head.next.next = null;
         return;
       }

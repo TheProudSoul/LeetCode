@@ -74,3 +74,19 @@ streamChecker.query('l');          // return true, because 'kl' is in the wordli
 **Hint #1:**
 
 Put the words into a trie, and manage a set of pointers within that trie.
+
+## Sum of Left Leaves (August 24th)
+
+Find the sum of all left leaves in a given binary tree.
+
+**Example:**
+
+```
+    3
+   / \
+  9  20
+    /  \
+   15   7
+
+There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.
+```
