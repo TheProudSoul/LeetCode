@@ -1,8 +1,7 @@
 package cn.theproudsoul.leetcode.august.week2;
 
-import cn.theproudsoul.leetcode.utils.ListGenerator;
-
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class PascalsTriangleII {
@@ -21,6 +20,6 @@ public class PascalsTriangleII {
 
   public static void main(String[] args) {
     PascalsTriangleII obj = new PascalsTriangleII();
-    assert ListGenerator.asList(1,3,3,1).equals(obj.getRow(3));
+    assert Arrays.asList(1,3,3,1).equals(obj.getRow(3));
   }
 }
