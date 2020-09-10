@@ -1,26 +1,9 @@
 package cn.theproudsoul.leetcode.august.week1;
 
+import cn.theproudsoul.leetcode.utils.TreeNode;
+
 import java.util.*;
 import java.util.stream.Collectors;
-
-class TreeNode {
-  int val;
-  TreeNode left;
-  TreeNode right;
-
-  TreeNode() {
-  }
-
-  TreeNode(int val) {
-    this.val = val;
-  }
-
-  TreeNode(int val, TreeNode left, TreeNode right) {
-    this.val = val;
-    this.left = left;
-    this.right = right;
-  }
-}
 
 public class VerticalOrderTraversalOfABinaryTree {
   class Point {

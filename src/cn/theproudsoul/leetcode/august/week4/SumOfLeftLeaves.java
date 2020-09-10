@@ -1,25 +1,6 @@
 package cn.theproudsoul.leetcode.august.week4;
 
-import java.util.Queue;
-
-class TreeNode {
-  int val;
-  TreeNode left;
-  TreeNode right;
-
-  TreeNode() {
-  }
-
-  TreeNode(int val) {
-    this.val = val;
-  }
-
-  TreeNode(int val, TreeNode left, TreeNode right) {
-    this.val = val;
-    this.left = left;
-    this.right = right;
-  }
-}
+import cn.theproudsoul.leetcode.utils.TreeNode;
 
 public class SumOfLeftLeaves {
   public int sumOfLeftLeaves(TreeNode root) {
