@@ -1,23 +1,8 @@
 package cn.theproudsoul.leetcode.august.week3;
 
+import cn.theproudsoul.leetcode.utils.ListNode;
+
 import java.util.Stack;
-
-class ListNode {
-  int val;
-  ListNode next;
-
-  ListNode() {
-  }
-
-  ListNode(int val) {
-    this.val = val;
-  }
-
-  ListNode(int val, ListNode next) {
-    this.val = val;
-    this.next = next;
-  }
-}
 
 public class ReorderList {
 
@@ -54,6 +39,5 @@ public class ReorderList {
     ReorderList obj = new ReorderList();
     obj.reorderList(test1);
     obj.reorderList(test2);
-    return;
   }
 }
