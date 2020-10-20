@@ -1,9 +1,6 @@
 package cn.theproudsoul.leetcode.september.week2;
 
-import cn.theproudsoul.leetcode.utils.TreeNode;
-
-import java.util.ArrayList;
-import java.util.List;
+import cn.theproudsoul.leetcode.common.TreeNode;
 
 public class SumOfRoot2LeafBinNums {
   int sum = 0;

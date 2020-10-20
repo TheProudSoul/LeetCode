@@ -1,7 +1,7 @@
 package cn.theproudsoul.leetcode.august.week5;
 
 
-import cn.theproudsoul.leetcode.utils.TreeNode;
+import cn.theproudsoul.leetcode.common.TreeNode;
 
 public class DeleteNodeInBST {
   public TreeNode deleteNode(TreeNode root, int key) {

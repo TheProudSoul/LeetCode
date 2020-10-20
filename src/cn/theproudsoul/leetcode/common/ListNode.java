@@ -1,4 +1,4 @@
-package cn.theproudsoul.leetcode.utils;
+package cn.theproudsoul.leetcode.common;
 
 /**
  * @author : zhengyijing

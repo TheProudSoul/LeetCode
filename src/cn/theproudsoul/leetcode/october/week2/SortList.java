@@ -1,12 +1,7 @@
 package cn.theproudsoul.leetcode.october.week2;
 
 
-import cn.theproudsoul.leetcode.utils.ListNode;
-
-import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import cn.theproudsoul.leetcode.common.ListNode;
 
 /**
  * @author : zhengyijing

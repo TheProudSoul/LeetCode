@@ -1,6 +1,6 @@
 package cn.theproudsoul.leetcode.august.week2;
 
-import cn.theproudsoul.leetcode.utils.TreeNode;
+import cn.theproudsoul.leetcode.common.TreeNode;
 
 public class PathSumIII {
 

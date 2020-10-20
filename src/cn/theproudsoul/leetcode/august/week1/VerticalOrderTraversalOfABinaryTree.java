@@ -1,6 +1,6 @@
 package cn.theproudsoul.leetcode.august.week1;
 
-import cn.theproudsoul.leetcode.utils.TreeNode;
+import cn.theproudsoul.leetcode.common.TreeNode;
 
 import java.util.*;
 import java.util.stream.Collectors;

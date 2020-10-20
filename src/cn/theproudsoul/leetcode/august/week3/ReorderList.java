@@ -1,6 +1,6 @@
 package cn.theproudsoul.leetcode.august.week3;
 
-import cn.theproudsoul.leetcode.utils.ListNode;
+import cn.theproudsoul.leetcode.common.ListNode;
 
 import java.util.Stack;
 

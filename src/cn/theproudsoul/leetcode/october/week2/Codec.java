@@ -1,6 +1,6 @@
 package cn.theproudsoul.leetcode.october.week2;
 
-import cn.theproudsoul.leetcode.utils.TreeNode;
+import cn.theproudsoul.leetcode.common.TreeNode;
 
 import java.util.Arrays;
 import java.util.LinkedList;
