@@ -6,6 +6,6 @@ package cn.theproudsoul.leetcode.march.week2;
  */
 public class MinCut {
   public int minCut(String s) {
-return 0;
+    return 0;
   }
 }

@@ -11,7 +11,7 @@ import cn.theproudsoul.leetcode.common.TreeNode;
  */
 public class MaxPathSum {
   public int maxPathSum(TreeNode root) {
-    if (root.left == null && root.left == null) {
+    if (root.left == null && root.right == null) {
       return root.val;
     }
     return Math.max(root.val, root.val);
